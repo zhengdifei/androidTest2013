@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".camera.CameraSetActivity">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#667700"
+        android:stretchColumns="0,1,2">
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/ca_tp_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="take photo"/>
+            <Button
+                android:id="@+id/ca_tv_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="take video"/>
+            <Button
+                android:id="@+id/ca_pv_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="play video"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/ca_vv_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="video view"/>
+            <Button
+                android:id="@+id/ca_pc_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="play camera"/>
+            <Button
+                android:id="@+id/ca_rs_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="record sound"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/ca_rv_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="record video"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

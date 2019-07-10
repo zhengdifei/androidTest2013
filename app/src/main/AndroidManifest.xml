@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidtest2013">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".app.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".sanbot.client.SearchBotActivity"></activity>
+        <activity android:name=".sanbot.client.SanbotClientActivity" />
+        <activity android:name=".sanbot.sever.SanbotMainActivity" />
+        <activity android:name=".socket.UdpSearchTestActivity" />
+        <activity android:name=".service.Service8TestActivity" />
+        <activity android:name=".service.Service7TestActivity" />
+        <activity android:name=".service.Service6TestActivity" />
+        <activity android:name=".service.Service5TestActivity" />
+        <activity android:name=".service.Service4TestActivity" />
+        <activity android:name=".service.Service3TestActivity" />
+        <activity android:name=".service.Service2TestActivity" />
+        <activity android:name=".service.ServiceSetActivity" />
+        <activity android:name=".service.Service1TestActivity" />
+        <activity android:name=".video3.hw.video.client.ClientActivity" />
+        <activity android:name=".video3.hw.video.server.ServerActivity" />
+        <activity android:name=".video2.MainRec2Activity" />
+        <activity android:name=".video2.MainVideo2Activity" />
+        <activity android:name=".video.MainRecActivity" />
+        <activity android:name=".video.MainVideoActivity" />
+        <activity android:name=".socket.TcpClientActivity" />
+        <activity android:name=".socket.SocketSetActivity" />
+        <activity android:name=".syscomp.BroadcastTestActivity" />
+        <activity android:name=".multithread.LooperTestActivity" />
+        <activity android:name=".multithread.HandlerMessageActivity" />
+        <activity android:name=".multithread.HandlerPostActivity" />
+        <activity android:name=".multithread.AsyncTaskTestActivity" />
+        <activity android:name=".socket.TcpServerActivity" />
+        <activity android:name=".socket.UdpServerActivity" />
+        <activity android:name=".socket.UdpClientActivity" />
+        <activity android:name=".camera.MediaRecorderVideoActivity" />
+        <activity android:name=".camera.CameraSetActivity" />
+        <activity android:name=".camera.MediaRecorderSoundActivity" />
+        <activity android:name=".camera.PlayCameraTestActivity" />
+        <activity android:name=".camera.VideoViewTestActivity" />
+        <activity android:name=".camera.PlayVedioTestActivity" />
+        <activity android:name=".camera.TakeVedioTestActivity" />
+        <activity android:name=".camera.TakePhototTestActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.media.action.IMAGE_CAPTURE"></action> -->
+            <!-- <category android:name="android.intent.category.DEFAULT"></category> -->
+            <!-- </intent-filter> -->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.media.action.STILL_IMAGE_CAMERA"></action> -->
+            <!-- <category android:name="android.intent.category.DEFAULT"></category> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".ui.ImageSwitcherActivity" />
+        <activity android:name=".ui.GalleryTestActivity" />
+        <activity android:name=".ui.SpinnerActivity" />
+        <activity android:name=".ui.ImageViewTestActivity" />
+        <activity android:name=".ui.DatePickerTestActivity" />
+        <activity
+            android:name=".ui.ProgressBarActivity"
+            android:label="@string/title_activity_progress_bar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.ToggleButtonTestActivity" />
+        <activity android:name=".ui.CheckboxTestActivity" />
+        <activity android:name=".ui.RadioTestActivity" />
+        <activity android:name=".ui.ButtonTestActivity" />
+        <activity android:name=".ui.EditTextActivity" />
+        <activity android:name=".ui.UIsetActivity" />
+        <activity android:name=".ui.TextViewActivity" />
+        <activity android:name=".layout.LayoutTestActivity" />
+        <activity android:name=".intent.IntentResultActivity" />
+        <activity android:name=".intent.IntentTestActivity" />
+        <activity android:name=".event.EventTestActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".syscomp.BasicBroadcast">
+            <intent-filter android:priority="100">
+                <action android:name="com.zdf.broadcast1" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".syscomp.BasicBroadcast2">
+            <intent-filter android:priority="99">
+                <action android:name="com.zdf.broadcast1" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".video3.hw.video.client.VideoStreamingReceiverService" />
+        <service android:name=".video3.hw.video.server.VideoStreamingSenderService" />
+        <service android:name=".service.Service1" />
+        <service android:name=".service.Service2">
+            <intent-filter>
+                <action android:name="com.zdf.service2" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.Service3"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.zdf.service3" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.Service4"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".service.Service5" />
+        <service android:name=".service.Service6" />
+        <service android:name=".service.Service7">
+            <intent-filter>
+                <action android:name="com.zdf.service7" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.Service8">
+            <intent-filter>
+                <action android:name="com.zdf.service8" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

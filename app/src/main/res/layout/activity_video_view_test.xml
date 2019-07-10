@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".camera.VideoViewTestActivity">
+
+    <SeekBar
+        android:id="@+id/vv_sb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/vv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="播放"/>
+
+        <Button
+            android:id="@+id/vv_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂停"/>
+
+        <Button
+            android:id="@+id/vv_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重播"/>
+
+        <Button
+            android:id="@+id/vv_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止"/>
+    </LinearLayout>
+    <VideoView
+        android:id="@+id/vv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

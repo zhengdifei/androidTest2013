@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".event.EventTestActivity">
+
+    <Button
+        android:id="@+id/event1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/event1_btn"/>
+
+    <Button
+        android:id="@+id/event2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/event2_btn"/>
+
+    <Button
+    android:id="@+id/event3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/event3_btn"
+    android:onClick="btnClick"/>
+
+    <Button
+        android:id="@+id/event4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/event4_btn" />
+
+    <com.example.androidtest2013.event.MyButton
+        android:id="@+id/event5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/event5_btn"/>
+</LinearLayout>

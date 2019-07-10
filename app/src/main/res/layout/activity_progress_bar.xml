@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ProgressBarActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ProgressBar.Small"/>
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ProgressBar.Large"/>
+    <ProgressBar
+        android:id="@+id/pb_visible"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ProgressBar.Inverse"/>
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ProgressBar.Small.Inverse"/>
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Small.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ProgressBar.Large"/>
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Large.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ProgressBar.Horizontal"/>
+    <ProgressBar
+        android:id="@+id/pb_hor"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="20"
+        android:secondaryProgress="60"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#224455">
+        <Button
+            android:id="@+id/pb_add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   +   "/>
+        <Button
+            android:id="@+id/pb_reduce_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   -   "/>
+        <Button
+            android:id="@+id/pb_visible_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="visible_large"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#998855">
+
+        <SeekBar
+            android:id="@+id/sb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:max="100"
+            android:progress="30"
+            android:background="#653289"/>
+        <SeekBar
+            android:id="@+id/sb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:max="100"
+            android:progress="20"
+            android:secondaryProgress="80"
+            android:thumb="@drawable/a1"
+            android:background="#653289"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RatingBar
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RatingBar
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="false"
+            android:max="100"
+            android:numStars="4"
+            android:rating="2.5"
+            android:stepSize="0.5"/>
+    </LinearLayout>
+</LinearLayout>

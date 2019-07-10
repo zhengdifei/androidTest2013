@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".multithread.HandlerMessageActivity">
+
+    <Button
+        android:id="@+id/hm_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下载图片"/>
+
+    <ImageView
+        android:id="@+id/hm_iv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/hm_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sendMessage"/>
+
+    <Button
+        android:id="@+id/hm_btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sendToTarget"/>
+
+    <Button
+        android:id="@+id/hm_btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="空消息"/>
+
+    <Button
+        android:id="@+id/hm_btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sendMessge延迟"/>
+
+    <Button
+        android:id="@+id/hm_btn6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="空消息延迟"/>
+    <TextView
+        android:id="@+id/hm_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

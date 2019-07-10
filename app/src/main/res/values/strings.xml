@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Android 2013 Test</string>
+    <string name="event1_btn">长点击</string>
+    <string name="event2_btn">短点击</string>
+    <string name="event3_btn">事件点击</string>
+    <string name="event4_btn">内部类点击</string>
+    <string name="event5_btn">自定义点击</string>
+    <string name="app_value_btn">设置全局变量</string>
+    <string name="copy_btn">获取剪切板数据</string>
+    <string name="self_copy_btn">设置自定义剪切板数据</string>
+    <string name="get_self_copy_btn">获取自定义剪切板数据</string>
+    <string name="jump_intent">跳转传数</string>
+    <string name="jump_intent_back">跳转传数</string>
+    <string name="add_btn">进行计算</string>
+    <string name="add_submit">结果提交</string>
+    <string name="et1_btn">添加表情</string>
+    <string name="et2_btn">验证是否正确</string>
+    <string name="radio_btn">选择性别</string>
+    <string name="chk_btn">添加checkbox</string>
+    <string name="tog_btn_h">横向排列</string>
+    <string name="tog_btn_v">纵向排列</string>
+    <string name="title_activity_progress_bar">ProgressBarActivity</string>
+    <string name="sp_beijing">北京区域</string>
+    <string-array name="beijing">
+        <item>朝阳区</item>
+        <item>海淀区</item>
+        <item>房山区</item>
+        <item>丰台区</item>
+        <item>东城区</item>
+        <item>西城区</item>
+    </string-array>
+    <string name="conf_dialog_title">Please configure server</string>
+    <string name="conf_dialog_fps">FPS</string>
+    <string name="conf_dialog_iscompress">Iscompress</string>
+    <string name="input_msg">Please input your message</string>
+    <string name="conf_dialog_ip">Server IP</string>
+    <string name="conf_dialog_port">Server Port</string>
+    <string name="sb_up">向上(up)</string>
+    <string name="sb_left">向左(left)</string>
+    <string name="sb_right">向右(right)</string>
+    <string name="sb_down">向下(down)</string>
+    <string name="sb_send">发送</string>
+    <string name="sb_search">搜索</string>
+    <string name="sb_search_show">无可用的机器人列表</string>
+</resources>

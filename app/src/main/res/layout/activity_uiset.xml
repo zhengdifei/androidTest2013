@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.UIsetActivity">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#226622"
+        android:stretchColumns="0,1,2">
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/ui_tv_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"/>
+            <Button
+                android:id="@+id/ui_et_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EditView"/>
+            <Button
+                android:id="@+id/ui_btn_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/ui_rd_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton"/>
+            <Button
+                android:id="@+id/ui_chk_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Checkbox"/>
+            <Button
+                android:id="@+id/ui_tog_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/ui_pb_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ProgressBar"/>
+            <Button
+                android:id="@+id/ui_dp_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DatePicker"/>
+            <Button
+                android:id="@+id/ui_iv_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ImageView"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/ui_sp_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spinner"/>
+            <Button
+                android:id="@+id/ui_ga_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gallery"/>
+            <Button
+                android:id="@+id/ui_is_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ImageSwitcher"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

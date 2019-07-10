@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.SpinnerActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="弹出的Spinner"/>
+
+    <Spinner
+        android:id="@+id/sp1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog">
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下拉spinner"/>
+
+    <Spinner
+        android:id="@+id/sp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"></Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="entries数据源"/>
+    <Spinner
+        android:id="@+id/sp3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/beijing"></Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="弹出标题dialog,使用enties数据源"/>
+
+    <Spinner
+        android:id="@+id/sp4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/beijing"
+        android:prompt="@string/sp_beijing"
+        android:spinnerMode="dialog"></Spinner>
+
+    <Spinner
+        android:id="@+id/sp5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+</LinearLayout>

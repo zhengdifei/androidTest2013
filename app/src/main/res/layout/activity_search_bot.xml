@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".sanbot.client.SearchBotActivity">
+    <Button
+        android:id="@+id/sb_c_btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sb_search"/>
+    <TextView
+        android:id="@+id/sb_c_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sb_search_show"/>
+    <ListView
+        android:id="@+id/sb_c_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></ListView>
+</LinearLayout>

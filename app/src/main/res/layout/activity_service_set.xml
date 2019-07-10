@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".service.ServiceSetActivity">
+
+    <Button
+        android:id="@+id/sv_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start service"/>
+
+    <Button
+        android:id="@+id/sv_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bind service"/>
+
+    <Button
+        android:id="@+id/sv_btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="intent service"/>
+
+    <Button
+        android:id="@+id/sv_btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="front service"/>
+
+    <Button
+        android:id="@+id/sv_btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="self service"/>
+
+    <Button
+        android:id="@+id/sv_btn6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="messenger"/>
+
+    <Button
+        android:id="@+id/sv_btn7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="simple aidl service"/>
+
+    <Button
+        android:id="@+id/sv_btn8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="complex aidl service"/>
+</LinearLayout>
